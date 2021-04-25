@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAPIGSB.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Button Text="Stats" x:Name="btnStats" Clicked="btnStats_Clicked"></Button>
+        <Button Text="Regions" x:Name="btnRegions" Clicked="btnRegions_Clicked"></Button>
+        <Button Text="Visiteurs" x:Name="btnVisiteurs" Clicked="btnVisiteurs_Clicked"></Button>
+        <Button Text="Travailler" x:Name="btnTravailler" Clicked="btnTravailler_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

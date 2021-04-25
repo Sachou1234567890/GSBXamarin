@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAPIGSB.Pages.PageVisiteur">
+<ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvVisiteurs" ItemSelected="lvVisiteurs_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" HeightRequest="100">
+                                    <Label x:Name="lblIdTicket" VerticalOptions="Center" HorizontalOptions="Center"
+                                               WidthRequest="50" FontSize="20"
+                                               Text="{Binding Id}"></Label>
+                                    <Label x:Name="lblNomTicket" WidthRequest="100" VerticalOptions="Center" FontSize="20"
+                                               Text="{Binding Nom}"></Label>
+                                    <Label x:Name="lblPrenomTicket" WidthRequest="100" VerticalOptions="Center" FontSize="20"
+                                               Text="{Binding Prenom}"></Label>
+                                    <Label x:Name="lblSeccodeTicket" WidthRequest="100" VerticalOptions="Center" FontSize="20"
+                                               Text="{Binding Seccode}"></Label>
+                                    <Label x:Name="lblLabcodeTicket" WidthRequest="100" VerticalOptions="Center" FontSize="20"
+                                               Text="{Binding Labcode}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label>Nom</Label>
+            <Entry x:Name="txtNomVisiteur"></Entry>
+            <Label>Prenom</Label>
+            <Entry x:Name="txtPrenomVisiteur"></Entry>
+            <Label>Secteur</Label>
+            <Entry x:Name="txtSeccode"></Entry>
+            <Label>Laboratoire</Label>
+            <Entry x:Name="txtLabcode"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button HorizontalOptions="Center" Text="Modifier" x:Name="btnModifier" Clicked="btnModifier_Clicked"></Button>
+                <Button HorizontalOptions="Center" Text="Ajouter" x:Name="btnAjouter" Clicked="btnAjouter_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
