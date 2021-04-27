@@ -10,6 +10,7 @@
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal" HeightRequest="100">
+                                    <Label>Region ayant le plus de visiteurs</Label>
                                     <Label x:Name="lbnomTicket" VerticalOptions="Center" HorizontalOptions="Center"
                                                WidthRequest="80" FontSize="20"
                                                Text="{Binding nom}"></Label>
